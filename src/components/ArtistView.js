@@ -8,7 +8,7 @@ function ArtistView() {
     const justAlbums = artistData.filter(entry => entry.collectionType === 'Album')
 
     useEffect(() => {
-        const API_URL = `http://localhost:3006/album/${id}`
+        const API_URL = `http://localhost:4000/album/${id}`
         const fetchData = async () => {
             const res = await fetch(API_URL)
             const resData = await res.json()
